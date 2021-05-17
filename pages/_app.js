@@ -7,6 +7,13 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "../components/ui/theme";
 import { appWithTranslation } from "next-i18next";
 
+// Import Swiper styles
+import 'swiper/swiper.scss';
+import 'swiper/swiper-bundle.css';
+import 'swiper/components/autoplay/package.json';
+import 'swiper/components/navigation/package.json';
+import 'swiper/components/pagination/package.json';
+
 function MyApp(props) {
   const { Component, pageProps } = props;
 

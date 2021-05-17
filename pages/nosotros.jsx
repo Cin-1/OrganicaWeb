@@ -2,13 +2,20 @@ import React from "react";
 import Navbar from "../components/ui/navbar";
 import Footer from "../components/footer";
 
-import { Box } from "@material-ui/core";
-
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import LangSelector from "../components/langSelector";
 import { useRouter } from "next/router";
+import { useTranslation } from "react-i18next";
+
 import { ThemeProvider } from "@material-ui/core/styles";
+import { Box } from "@material-ui/core";
 import theme from "../components/ui/theme";
 
 const Nosotros = () => {
+
+  const router = useRouter();
+  const { t } = useTranslation("global");
+
   return (
     <ThemeProvider theme={theme}>
       <Box>
@@ -17,13 +24,11 @@ const Nosotros = () => {
       <Box ml={5} mr={5}>
         <Box pt={10}>
           <Box>
-            <p></p>
-            <p>{nosotros.title}</p>
+            <p>{t("nosotros.title")}</p>
             <p>
-              {" "}
-              mezcla poderosa en una nueva forma de construir conocimiento”.
+              {t("nosotros.quote-text2")}
             </p>
-            <p>Edgar Morin </p>
+            <p>{t("nosotros.quote")}</p>
           </Box>
         </Box>
         <Box>
@@ -59,5 +64,11 @@ const Nosotros = () => {
     </ThemeProvider>
   );
 };
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["global"])),
+  },
+});
 
 export default Nosotros;

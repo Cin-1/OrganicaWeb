@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Navbar from "../components/ui/navbar";
-import ImageSlider from "../components/ImageSlider";
-import { SliderData } from "../components/data/SliderData";
+import Header from "../components/header"
 import Services from "../components/services";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
@@ -21,7 +20,7 @@ function Home() {
         <link rel="icon" href="/images/logo.png" />
       </Head>
       <Navbar />
-      <ImageSlider slides={SliderData} />
+      <Header />
       <Services />
       <Contact />
       <Footer />

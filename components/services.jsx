@@ -62,7 +62,7 @@ export default function Services() {
                 />
               </Box>
               <Box>
-                <h3 className={classes.subTitle}>Comunicación Interna</h3>
+                <h3 className={classes.subTitle}>{t("landing.two")}</h3>
               </Box>
             </Box>
           </Link>
@@ -84,7 +84,7 @@ export default function Services() {
                 />
               </Box>
               <Box>
-                <h3 className={classes.subTitle}>Relaciones vinculadas</h3>
+                <h3 className={classes.subTitle}>{t("services.three")}</h3>
                 <h3 className={classes.subTitle}>al periodismo</h3>
               </Box>
             </Box>

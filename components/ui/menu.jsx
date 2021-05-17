@@ -105,6 +105,20 @@ const Menu = () => {
         <p className={classes.hovermenu}>
           <Link href="/trabajosRealizados">Trabajos Realizados</Link>
         </p>
+        <div className="dropdown">
+          <div className={classes.hovermenu}>Portafolio</div>
+          <div className="dropdown-content">
+            <Link href="/servicios/diagnostico">
+              <a>Imagen Institucional / Corporativa</a>
+            </Link>
+            <Link href="/servicios/marketing">
+              <a>Realizaciones Audiovisuales</a>
+            </Link>
+            <Link href="/servicios/interna">
+              <a>Expresión Orgánica</a>
+            </Link>
+          </div>
+        </div>
         <p className={classes.hovermenu}>
           <Link href="/contacto">Contacto</Link>
         </p>

@@ -1,11 +1,12 @@
 {
     "landing": {
-        "title": "Our Services"
+        "title": "Our Services",
+        "two": "holi"
     },
     "services": {
         "one": "Marketing",
-        "two": "",
-        "three": "",
+        "two": "Internal Comunication",
+        "three": "Relationships",
         "four": "",
         "five": "",
         "six": "",
@@ -13,7 +14,8 @@
         "eight": ""
     },
     "nosotros": {
-        "title": "The universe of knowledge is dynamic, ethereal and illusory ...  "
-    },
-    "fo": "test"
+        "title": "“The universe of knowledge is dynamic, ethereal and illusory ...  ",
+        "quote-text2": "powerful blend in a new way of building knowledge.”",
+        "quote": "Edgar Morin"
+    }
 }

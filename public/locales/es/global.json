@@ -1,4 +1,7 @@
 {
+    "landing": {
+        "title": "Nuestros Servicios"
+    },
     "services": {
         "one": "Marketing / Multimedia",
         "two": "Comunicación Interna",
@@ -10,10 +13,8 @@
         "eight": "Diseño"
     },
     "nosotros": {
-        "title": "“El universo de conocimiento es dinámico, etéreo e ilusorio... "
-    },
-    "landing": {
-        "title": "Nuestros Servicios"
-    },
-    "fo": "prueba"
+        "title": "“El universo de conocimiento es dinámico, etéreo e ilusorio... ",
+        "quote-text2": "mezcla poderosa en una nueva forma de construir conocimiento”.",
+        "quote": "Edgar Morin"
+    }
 }
